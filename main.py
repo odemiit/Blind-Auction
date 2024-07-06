@@ -13,6 +13,9 @@ more_players_left = True
 #variable to store the highest bid
 highest_bid = 0
 
+#variable to store the winner
+winner = ""
+
 while more_players_left:
   #ask for user name and bid
   user_name = input("What is your name?: ")
@@ -24,6 +27,7 @@ while more_players_left:
   #check for highest bid
   if user_bid > highest_bid:
     highest_bid = user_bid
+    winner = user_name
 
   #ask for more bidders
   more_bidders = input("Are there any other bidders? Type 'yes' or 'no'\n")
@@ -34,4 +38,4 @@ while more_players_left:
   elif more_bidders == "yes":
     clear()
 
-print(highest_bid)
+print(f"The winner is {winner} with a bid of ${highest_bid}")
