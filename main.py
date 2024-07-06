@@ -10,6 +10,9 @@ def add_bid_entry(name, bid):
 
 more_players_left = True
 
+#variable to store the highest bid
+highest_bid = 0
+
 while more_players_left:
   #ask for user name and bid
   user_name = input("What is your name?: ")
