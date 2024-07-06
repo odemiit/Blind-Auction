@@ -11,3 +11,6 @@ user_bid = int(user_bid)
 bid_log = {}
 bid_log[user_name] = user_bid
 
+#ask for more bidders
+more_bidders = input("Are there any other bidders? Type 'yes' or 'no'\n")
+
