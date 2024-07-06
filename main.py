@@ -21,6 +21,10 @@ while more_players_left:
   #call on function to add bid entry
   add_bid_entry(user_name, user_bid)
 
+  #check for highest bid
+  if user_bid > highest_bid:
+    highest_bid = user_bid
+
   #ask for more bidders
   more_bidders = input("Are there any other bidders? Type 'yes' or 'no'\n")
 
@@ -30,3 +34,4 @@ while more_players_left:
   elif more_bidders == "yes":
     clear()
 
+print(highest_bid)
