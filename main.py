@@ -6,3 +6,8 @@ user_bid = input("What is your bid?: $")
 
 #convert the user bid from string to an integer
 user_bid = int(user_bid)
+
+#add the entry into an empty dictionary
+bid_log = {}
+bid_log[user_name] = user_bid
+
